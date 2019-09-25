@@ -29,6 +29,7 @@ namespace API
             services.AddMvc();
             var connectionString = Configuration["ConnectionStrings:brakTrakDBConnectionString"];
             services.AddDbContext<ApiDBContext>(c => c.UseSqlServer(connectionString));
+            services.AddScoped<ITempRepository, TempRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

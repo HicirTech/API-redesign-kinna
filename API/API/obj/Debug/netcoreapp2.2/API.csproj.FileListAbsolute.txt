@@ -11,4 +11,3 @@ C:\Users\luoze\Documents\GitHub\API-redesign-kinna\API\API\obj\Debug\netcoreapp2
 C:\Users\luoze\Documents\GitHub\API-redesign-kinna\API\API\obj\Debug\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
 C:\Users\luoze\Documents\GitHub\API-redesign-kinna\API\API\obj\Debug\netcoreapp2.2\API.dll
 C:\Users\luoze\Documents\GitHub\API-redesign-kinna\API\API\obj\Debug\netcoreapp2.2\API.pdb
-C:\Users\luoze\Documents\GitHub\API-redesign-kinna\API\API\obj\Debug\netcoreapp2.2\API.csprojAssemblyReference.cache
