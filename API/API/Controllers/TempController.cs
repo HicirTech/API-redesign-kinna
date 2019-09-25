@@ -48,5 +48,23 @@ namespace API.Controllers
             }
             return Ok(temps);
         }
+
+
+        //api/temp/date
+        [HttpGet("{yyyy},{mm},{dd}")]
+        public IActionResult GetTempByDateTime(int yyyy, int mm, int dd)
+        {
+
+            var temps = _tempRepository.GetTempByTime(new DateTime(yyyy,mm,dd));
+            if (temps.Count == 0)
+            {
+                return NotFound();
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            return Ok(temps);
+        }
     }
 }

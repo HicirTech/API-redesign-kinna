@@ -34,12 +34,24 @@ namespace API
                 new Ppg()
                 {
                     heartRate=100,
-                    time = new DateTime(1990,1,1)
+                    time = new DateTime(1990,1,1),
+                    greenCount1=1,
+                    greenCount2=1,
+                    xAccel=1,
+                    yAccel=1,
+                    zAccel=1,
+                    hrConfidence=1
                 },
                 new Ppg()
                 {
                     heartRate=101,
-                    time = new DateTime(1990,2,2)
+                    time = new DateTime(1990,2,2),
+                    greenCount1=2,
+                    greenCount2=2,
+                    xAccel=2,
+                    yAccel=2,
+                    zAccel=2,
+                    hrConfidence=2
                 }
             };
             context.ppg.AddRange(ppgs);

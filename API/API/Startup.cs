@@ -30,6 +30,7 @@ namespace API
             var connectionString = Configuration["ConnectionStrings:brakTrakDBConnectionString"];
             services.AddDbContext<ApiDBContext>(c => c.UseSqlServer(connectionString));
             services.AddScoped<ITempRepository, TempRepository>();
+            services.AddScoped<IPpgRepository, PpgRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,7 +50,7 @@ namespace API
 
             //used for insert text in development envirment
             //context.SeedTempDataContext();
-            
+            context.SeedPPGDataContext();
             app.UseMvc();
         }
     }
