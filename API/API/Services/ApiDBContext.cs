@@ -13,13 +13,14 @@ namespace API.Services
             :base(options)
         {
             Database.Migrate();
-           
         }
 
         public virtual DbSet<Ppg> ppg { get; set; }
 
         public virtual DbSet<Temp> temp { get; set; }
 
-     
+
+
+
     }
 }

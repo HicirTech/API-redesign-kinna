@@ -12,5 +12,6 @@ namespace API.Services
         Temp GetTempByID(int id);
 
         ICollection<Temp> GetTempByTime(DateTime time);
+        bool hasTempId(int id);
     }
 }

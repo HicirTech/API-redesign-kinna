@@ -27,5 +27,10 @@ namespace API.Services
         {
             return _tempContext.temp.Where(c => c.time == time).ToList();
         }
+
+        public bool hasTempId(int id)
+        {
+            return  _tempContext.temp.Where(c => c.id == id) != null;
+        }
     }
 }
