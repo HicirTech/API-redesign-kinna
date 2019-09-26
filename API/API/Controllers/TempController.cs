@@ -34,7 +34,10 @@ namespace API.Controllers
         }
 
         //api/temp/id
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name = "GetTempByID")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Temp>))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
         public IActionResult GetTempByID(int id)
         {
             if (!_tempRepository.hasTempId(id))
@@ -50,12 +53,15 @@ namespace API.Controllers
         }
 
 
-        //api/temp/date
+        //api/temp/yyyy,mm,dd
         [HttpGet("{yyyy},{mm},{dd}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Temp>))]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(400)]
         public IActionResult GetTempByDateTime(int yyyy, int mm, int dd)
         {
 
-            var temps = _tempRepository.GetTempByTime(new DateTime(yyyy,mm,dd));
+            var temps = _tempRepository.GetTempByTime(new DateTime(yyyy, mm, dd));
             if (temps.Count == 0)
             {
                 return NotFound();
@@ -65,6 +71,105 @@ namespace API.Controllers
                 return BadRequest();
             }
             return Ok(temps);
+        }
+
+        //api/temp
+        [HttpPost]
+        [ProducesResponseType(201, Type = typeof(Temp))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(422)]
+        [ProducesResponseType(500)]
+        public IActionResult CreateTemp([FromBody]Temp newTemp)
+        {
+            if (newTemp == null)
+            {
+                return BadRequest(ModelState);
+            }
+            var temp = _tempRepository.GetTempByTime(newTemp.time);
+            if (temp.Count != 0)
+            {
+                ModelState.AddModelError("", "New temp has time exists");
+                //not processable
+                return StatusCode(422, ModelState);
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (!_tempRepository.CreateTemp(newTemp))
+            {
+                ModelState.AddModelError("", "Save Temp Error");
+                return StatusCode(500, ModelState);
+            }
+            return CreatedAtRoute("GetTempByID", new { id = newTemp.id }, newTemp);
+        }
+
+
+        //api/temp/id
+        [HttpPut("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(422)]
+        [ProducesResponseType(500)]
+        [ProducesResponseType(204)]
+        public IActionResult UpdateTemp(int id, Temp newTemp)
+        {
+            if (newTemp == null)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (id != newTemp.id)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!_tempRepository.hasTempId(id))
+            {
+                ModelState.AddModelError("", "No such id");
+                return NotFound(ModelState);
+            }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            if (!_tempRepository.updaeteTemp(newTemp))
+            {
+                ModelState.AddModelError("", "update temp Error");
+                return StatusCode(500, ModelState);
+            }
+            return NoContent();
+        }
+
+
+        //api/temp/id
+        [HttpDelete("{id}")]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(500)]
+        [ProducesResponseType(204)]
+        public IActionResult DeleteTemp(int id)
+        {
+            if (!_tempRepository.hasTempId(id))
+            {
+                return NotFound();
+            }
+            Temp target = _tempRepository.GetTempByID(id);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            if (target == null)
+            {
+                return NotFound();
+            }
+
+            if (!_tempRepository.DeleteTemp(target))
+            {
+                ModelState.AddModelError("", "delete temp Error");
+                return StatusCode(500, ModelState);
+            }
+            return NoContent();
         }
     }
 }

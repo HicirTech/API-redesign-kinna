@@ -13,6 +13,19 @@ namespace API.Services
         {
             _tempContext = tempContext;
         }
+
+        public bool CreateTemp(Temp temp)
+        {
+            _tempContext.Add(temp);
+            return save();
+        }
+
+        public bool DeleteTemp(Temp temp)
+        {
+            _tempContext.Remove(temp);
+            return save();
+        }
+
         public ICollection<Temp> GetAllTemps()
         {
             return _tempContext.temp.OrderBy(c => c.time).ToList<Temp>();
@@ -31,6 +44,17 @@ namespace API.Services
         public bool hasTempId(int id)
         {
             return  _tempContext.temp.Where(c => c.id == id) != null;
+        }
+
+        public bool save()
+        {
+            return _tempContext.SaveChanges() >= 0;//if save happend?
+        }
+
+        public bool updaeteTemp(Temp temp)
+        {
+            _tempContext.Update(temp);
+            return save();
         }
     }
 }

@@ -14,6 +14,19 @@ namespace API.Services
         {
             _ppgContext = context;
         }
+
+        public bool CreatePpg(Ppg ppg)
+        {
+            _ppgContext.Add(ppg);
+            return save();
+        }
+
+        public bool DeletePpg(Ppg ppg)
+        {
+            _ppgContext.Remove(ppg);
+            return save();
+        }
+
         public ICollection<Ppg> GetAllPpgs()
         {
             return _ppgContext.ppg.OrderBy(p => p.id).ToList();
@@ -32,6 +45,17 @@ namespace API.Services
         public bool hasPpgId(int id)
         {
             return _ppgContext.ppg.Where(c => c.id == id) != null;
+        }
+
+        public bool save()
+        {
+            return _ppgContext.SaveChanges() >= 0;
+        }
+
+        public bool updaetePpg(Ppg ppg)
+        {
+            _ppgContext.Update(ppg);
+            return save();
         }
     }
 }

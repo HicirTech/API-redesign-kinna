@@ -50,7 +50,7 @@ namespace API
 
             //used for insert text in development envirment
             //context.SeedTempDataContext();
-            context.SeedPPGDataContext();
+            //context.SeedPPGDataContext();
             app.UseMvc();
         }
     }

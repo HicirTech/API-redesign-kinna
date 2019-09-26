@@ -12,5 +12,9 @@ namespace API.Services
         Ppg GetPpgByID(int id);
         ICollection<Ppg> GetPpgByTime(DateTime time);
         bool hasPpgId(int id);
+        bool CreatePpg(Ppg ppg);
+        bool DeletePpg(Ppg ppg);
+        bool updaetePpg(Ppg ppg);
+        bool save();
     }
 }

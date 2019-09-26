@@ -13,5 +13,10 @@ namespace API.Services
 
         ICollection<Temp> GetTempByTime(DateTime time);
         bool hasTempId(int id);
+
+        bool CreateTemp(Temp temp);
+        bool DeleteTemp(Temp temp);
+        bool updaeteTemp(Temp temp);
+        bool save();
     }
 }
