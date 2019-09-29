@@ -1,0 +1,269 @@
+﻿<?xml version ="1.0"?>
+<configuration xmlns="urn:microsoft-catalog:XML_Metabase_V269_0">
+<MBProperty>
+<IIS_Global	Location ="."
+		BINSchemaTimeStamp="08ee7ee82276d501"
+		ChangeNumber="215"
+		HistoryMajorVersionNumber="6"
+		SessionKey="49634b62980000004c00000040000000010200000168000000a40000a9f2ee751e9ef2f49bc669e26496dcd5c71006d197ebb9833fc5dd909a1b74868713de4a320c37c6382fc05fd9d2f1be2da27f35ba75d2646005538385e4e30d000000000a01489431c2ffacba4318314cced54e37378b5da7011fd1c054e3cfc304b2299e17ba2f473084ac60a20e19e88fd8eafb908b0cb40b91b970cd718f29946fc9"
+		XMLSchemaTimeStamp="6ad87fe82276d501"
+	>
+</IIS_Global>
+<IIS_ROOT	Location ="/"
+		AdminACL="49634462e00000009800000040000000e86ddc51d99cddca47b35a47c609ffd120080c6604bfb496abcab3867471db902b24ec093fa26d377a03612cfaccca9f374547f2a519c57fdf7606b856fbc31b0228f8b66e02ef6d9603b5be57bf69ea6ac57bbc1db92bf4282657a486f7c44792ed3d372bf5313ed613a63b9b2ac3bfe3b09572bfa6e81f665313b092bc7f22836ed480df77d22469f944736740841c6b09120f82cb3504c5b198a39eb5589f565dd060da51b57bcbcfa6ea1fdd70fbfb420e51a125187e3e03e87ad167eb4ee71963072f44203df14d4dd5f8ac006fdc59e3f30a21277a"
+	>
+</IIS_ROOT>
+<IIsComputer	Location ="/LM"
+		EnableEditWhileRunning="0"
+		EnableHistory="1"
+		MaxBandwidth="4294967295"
+		MaxHistoryFiles="10"
+	>
+</IIsComputer>
+<IIsConfigObject	Location ="/LM/IISADMIN"
+	>
+</IIsConfigObject>
+<IIsConfigObject	Location ="/LM/IISADMIN/EXTENSIONS"
+	>
+</IIsConfigObject>
+<IIsConfigObject	Location ="/LM/IISADMIN/EXTENSIONS/DCOMCLSIDS"
+	>
+	<Custom
+		Name="MD_IISADMIN_EXTENSIONS"
+		ID="1028"
+		Value="{61738644-F196-11D0-9953-00C04FD919C1}"
+		Type="MULTISZ"
+		UserType="IIS_MD_UT_SERVER"
+		Attributes="NO_ATTRIBUTES"
+	/>
+</IIsConfigObject>
+<IIsConfigObject	Location ="/LM/IISADMIN/PROPERTYREGISTRATION"
+	>
+	<Custom
+		Name="MD_METADATA_ID_REGISTRATION"
+		ID="1030"
+		Value="0-65535;Microsoft Reserved
+			65536-524288;Microsoft IIS Admin Objects Reserved"
+		Type="MULTISZ"
+		UserType="IIS_MD_UT_SERVER"
+		Attributes="INHERIT"
+	/>
+</IIsConfigObject>
+<IIsLogModules	Location ="/LM/logging"
+		AdminACL="49634462a00000005800000040000000e86ddc51d99cddca07b35a470609ffd120080c6604bfb496abcaf3867171db902b24ec093fa26d377a03612cfaccca9f374547f2a519c57fde7412b8dffbc31e2329f8b64e00ef688401b5be57bf7defc3c57bbc3cba2bf468cb59e5ca13b0b25c7293d1cfa19403b160251984642bac063eea74d46c4622928b6314b0fed1bec7dd8f92a8ccccfeb682fc12add78862378c4b500a994179"
+	>
+</IIsLogModules>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging"
+		LogCustomPropertyServicesString="W3SVC
+			MSFTPSVC
+			SMTPSVC
+			NNTPSVC"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Date"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="date"
+		LogCustomPropertyID="4013"
+		LogCustomPropertyMask="1"
+		LogCustomPropertyName="Date"
+		LogCustomPropertyNodeID="1"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyID="4013"
+		LogCustomPropertyName="Extended Properties"
+		LogCustomPropertyNodeID="3"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Bytes Received"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="cs-bytes"
+		LogCustomPropertyMask="8192"
+		LogCustomPropertyName="Bytes Received"
+		LogCustomPropertyNodeID="17"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Bytes Sent"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="sc-bytes"
+		LogCustomPropertyMask="4096"
+		LogCustomPropertyName="Bytes Sent"
+		LogCustomPropertyNodeID="16"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Client IP Address"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="c-ip"
+		LogCustomPropertyMask="4"
+		LogCustomPropertyName="Client IP Address"
+		LogCustomPropertyNodeID="5"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Cookie"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs(Cookie)"
+		LogCustomPropertyMask="131072"
+		LogCustomPropertyName="Cookie"
+		LogCustomPropertyNodeID="22"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Host"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs-host"
+		LogCustomPropertyMask="1048576"
+		LogCustomPropertyName="Host"
+		LogCustomPropertyNodeID="20"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Method"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs-method"
+		LogCustomPropertyMask="128"
+		LogCustomPropertyName="Method"
+		LogCustomPropertyNodeID="11"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Protocol Status"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="sc-status"
+		LogCustomPropertyMask="1024"
+		LogCustomPropertyName="Protocol Status"
+		LogCustomPropertyNodeID="14"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Protocol Substatus"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="sc-substatus"
+		LogCustomPropertyMask="2097152"
+		LogCustomPropertyName="Protocol Substatus"
+		LogCustomPropertyNodeID="32"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Protocol Version"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs-version"
+		LogCustomPropertyMask="524288"
+		LogCustomPropertyName="Protocol Version"
+		LogCustomPropertyNodeID="19"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Referer"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs(Referer)"
+		LogCustomPropertyMask="262144"
+		LogCustomPropertyName="Referer"
+		LogCustomPropertyNodeID="23"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Server IP"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="s-ip"
+		LogCustomPropertyMask="64"
+		LogCustomPropertyName="Server IP Address"
+		LogCustomPropertyNodeID="9"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Server Name"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="s-computername"
+		LogCustomPropertyMask="32"
+		LogCustomPropertyName="Server Name"
+		LogCustomPropertyNodeID="8"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Server Port"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="s-port"
+		LogCustomPropertyMask="32768"
+		LogCustomPropertyName="Server Port"
+		LogCustomPropertyNodeID="10"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Service Name"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="s-sitename"
+		LogCustomPropertyMask="16"
+		LogCustomPropertyName="Service Name"
+		LogCustomPropertyNodeID="7"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Time Taken"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="time-taken"
+		LogCustomPropertyMask="16384"
+		LogCustomPropertyName="Time Taken"
+		LogCustomPropertyNodeID="18"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/URI Query"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs-uri-query"
+		LogCustomPropertyMask="512"
+		LogCustomPropertyName="URI Query"
+		LogCustomPropertyNodeID="13"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/URI Stem"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs-uri-stem"
+		LogCustomPropertyMask="256"
+		LogCustomPropertyName="URI Stem"
+		LogCustomPropertyNodeID="12"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/User Agent"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs(User-Agent)"
+		LogCustomPropertyMask="65536"
+		LogCustomPropertyName="User Agent"
+		LogCustomPropertyNodeID="21"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/User Name"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="cs-username"
+		LogCustomPropertyMask="8"
+		LogCustomPropertyName="User Name"
+		LogCustomPropertyNodeID="6"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Extended Properties/Win32 Status"
+		LogCustomPropertyDataType="3"
+		LogCustomPropertyHeader="sc-win32-status"
+		LogCustomPropertyMask="2048"
+		LogCustomPropertyName="Win32 Status"
+		LogCustomPropertyNodeID="15"
+	>
+</IIsCustomLogModule>
+<IIsCustomLogModule	Location ="/LM/logging/Custom Logging/Time"
+		LogCustomPropertyDataType="6"
+		LogCustomPropertyHeader="time"
+		LogCustomPropertyID="4013"
+		LogCustomPropertyMask="2"
+		LogCustomPropertyName="Time"
+		LogCustomPropertyNodeID="2"
+	>
+</IIsCustomLogModule>
+<IIsLogModule	Location ="/LM/logging/Microsoft IIS Log File Format"
+		LogModuleId="{FF160657-DE82-11CF-BC0A-00AA006111E0}"
+		LogModuleUiId="{31DCAB87-BB3E-11d0-9299-00C04FB6678B}"
+	>
+</IIsLogModule>
+<IIsLogModule	Location ="/LM/logging/NCSA Common Log File Format"
+		LogModuleId="{FF16065F-DE82-11CF-BC0A-00AA006111E0}"
+		LogModuleUiId="{31DCAB85-BB3E-11d0-9299-00C04FB6678B}"
+	>
+</IIsLogModule>
+<IIsLogModule	Location ="/LM/logging/ODBC Logging"
+		LogModuleId="{FF16065B-DE82-11CF-BC0A-00AA006111E0}"
+		LogModuleUiId="{31DCAB86-BB3E-11d0-9299-00C04FB6678B}"
+	>
+</IIsLogModule>
+<IIsLogModule	Location ="/LM/logging/W3C Extended Log File Format"
+		LogModuleId="{FF160663-DE82-11CF-BC0A-00AA006111E0}"
+		LogModuleUiId="{31DCAB88-BB3E-11d0-9299-00C04FB6678B}"
+	>
+</IIsLogModule>
+</MBProperty>
+</configuration>

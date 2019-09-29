@@ -1,0 +1,14 @@
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\bin\Release\netcoreapp2.2\API.deps.json
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\bin\Release\netcoreapp2.2\API.runtimeconfig.json
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\bin\Release\netcoreapp2.2\API.runtimeconfig.dev.json
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\bin\Release\netcoreapp2.2\API.dll
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\bin\Release\netcoreapp2.2\API.pdb
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.csprojAssemblyReference.cache
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.csproj.CoreCompileInputs.cache
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.RazorAssemblyInfo.cache
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.RazorAssemblyInfo.cs
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.AssemblyInfoInputs.cache
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.AssemblyInfo.cs
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.RazorTargetAssemblyInfo.cache
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.dll
+C:\Users\wws6045\Documents\GitHub\bractrak-api\API\obj\Release\netcoreapp2.2\API.pdb
